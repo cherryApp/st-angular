@@ -1,5 +1,5 @@
 {
-  "name": "@schematics/st-angular",
+  "name": "st-angular",
   "version": "1.0.4",
   "description": "Schematics for Standalone Angular Components",
   "scripts": {
