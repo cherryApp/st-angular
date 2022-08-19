@@ -1,10 +1,10 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "st-angular": {
+    "cmp": {
       "description": "A blank schematic.",
-      "factory": "./st-angular/index#stAngular",
-      "schema": "./st-angular/schema.json"
+      "factory": "./cmp/index#stAngular",
+      "schema": "./cmp/schema.json"
     }
   }
 }
