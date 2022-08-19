@@ -1,28 +1,32 @@
-# Getting Started With Schematics
+# Angular Standalone Component Generators
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This is a collection of generators for Angular standalone components.
 
-### Testing
+### Installation
+- `npm i st-angular`
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+### Usage
+- `ng g st-angular:st-angular page/test/mock/login`
+- It generates a new component like this:
+```typescript
+import { Component, OnInit } from '@angular/core';
 
-Check the documentation with
+@Component({
+  selector: 'app-login',
+  standalone: true,
+  imports: [],
+  template: `
+    <p>LoginComponent works!</p>
+  `,
+  styles: [``]
+})
+export class LoginComponent implements OnInit {
 
-```bash
-schematics --help
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
 ```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
-
-That's it!
+- This component will be a standalone component without any additional files.
