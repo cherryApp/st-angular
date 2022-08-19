@@ -1,6 +1,6 @@
 {
   "name": "@schematics/st-angular",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Schematics for Standalone Angular Components",
   "scripts": {
     "build": "tsc -p tsconfig.json",
